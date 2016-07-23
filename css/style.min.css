@@ -1,7 +1,6 @@
 
 body {
     background-image: url(../img/linear-gradient-green-blue-1920x1080-c2-00ff7f-6495ed-a-315-f-14.png);
-    background-position: ;
     background-size: cover;
 }
 
@@ -14,71 +13,53 @@ h5 {
     color: #fff;
 }
 
-
-.photos {
-    border-top: 1px solid #fff;
-    padding: 5% 0 5% 0;
+ul li {
+    list-style: none;
 }
 
-a:hover {
-    color: #d3dbe3
+.no-padding {
+    padding: 0
+}
+
+.no-gutter [class*=col-] {
+    padding-right: 0;
+    padding-left: 0
 }
 
 .navbar {
     position: static;
-    top: 0
-}
-
-.navbar li {
-    color: #fff;
-    list-style: none;
-    font-family: 'intro_regular', 'intro_regularregular', sans-serif;
-}
-
-.navbar .container {
-    width: 100%
-}
-
-.navbar,
-.navbar-spacer {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    display: block;
-    width: 100%;
-    height: 4.5rem;
-    z-index: 99;
     border-bottom: 1px solid #fff;
 }
 
-.navbar-social {
-    float: right
+.navbar li {
+    font-family: 'intro_regular', 'intro_regularregular', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
 }
 
+.logo {
+    text-align: left;
+}
 
-.navbar-item {
-    float: left;
-    padding-top: 2.5rem
+.phone {
+    text-align: right;
 }
 
 .header {
-    margin-bottom: 10%
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-align: center;
+    color: #fff;
+    font-family: 'intro_regular', 'intro_regularregular', sans-serif;
 }
 
 .header p {
-    font-family: 'intro_regular', 'intro_regularregular', sans-serif;
     font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    padding-top: 10%;
-    margin-bottom: 0;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 .title {
-    font-family: 'intro_regular', sans-serif;
     font-size: 100px;
-    text-align: center;
-    color: #fff;
     text-shadow: 10px 10px 1px rgba(0, 0, 0, 0.2)
 }
 
@@ -91,34 +72,24 @@ a:hover {
     color: #444;
 }
 .skill {
-    padding: 5rem 0 5rem 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
 }
 
 .skill h5 {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.skill ul {
-    margin-bottom: 0
-}
-
 .skill li {
     list-style:square;
-}
-
-.lSSlideOuter {
-    margin-top: 8px
-}
-
-.footer .author {
-    float: right
+    list-style-position: inside;
 }
 
 .footer {
-    display: inline-block;
-    padding-top: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
     width: 100%;
-    height: 4.5rem;
     background-color: #fff;
 }
 
@@ -128,15 +99,8 @@ a:hover {
     color: #77f2b7;
 }
 
-.footer li {
-    list-style: none
-}
-
 .footer a {
     color: #444;
-}
-
-.footer a:hover {
 }
 
 @media screen and (max-width:980px) {
@@ -162,12 +126,80 @@ a:hover {
     font-size: 10px;
 }
 
-.overlay {
+.overlay-map {
     background: transparent;
     position: relative;
     width: 100%;
     height: 400px;
     top: 400px;
     margin-top: -400px;
+}
+
+.work {
+    box-shadow: 0 0 0 1px #fff;
+    overflow: hidden;
+    position: relative
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+}
+
+.work .overlay {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: opacity, 0.3s;
+    transition: opacity, 0.3s
+}
+
+.work h5,
+.work p,
+.work img {
+    -webkit-transition: all, 0.5s;
+    transition: all, 0.5s
+}
+
+.work h5,
+.work p {
+    color: #fff;
+    margin: 0;
+    opacity: 0
+}
+
+.work h5 {
+    margin-bottom: 5px;
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0)
+}
+
+.work p {
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0)
+}
+
+.work-box:hover img,
+.work-box:focus img {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+
+.work-box:hover .overlay,
+.work-box:focus .overlay {
+    opacity: 1;
+}
+
+.work-box:hover .overlay h5,
+.work-box:hover .overlay p,
+.work-box:focus .overlay h5,
+.work-box:focus .overlay p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
 }
 
