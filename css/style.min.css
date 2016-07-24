@@ -40,6 +40,7 @@ a {
 
 .phone, .phone a {
     text-align: right;
+    color: #fff;
 }
 
 .header {
@@ -65,7 +66,7 @@ a {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.about p ,.about h5 {
+.about p ,.about h5, .about a {
     color: #444;
 }
 .skill {
@@ -226,7 +227,7 @@ a {
 }
 
 .js #hellopreloader_preload {
-    opacity: 1
+    opacity: 1;
 }
 
 
@@ -254,8 +255,9 @@ a {
         height: 0;
         margin: 0;
     }
-    
-    
+    .#hellopreloader_preload {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
