@@ -34,8 +34,9 @@ ul li {
     text-align: left;
 }
 
-.phone {
+.phone, .phone a {
     text-align: right;
+    color: #fff;
 }
 
 .header {
@@ -61,7 +62,7 @@ ul li {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.about p ,.about h5 {
+.about p ,.about h5, .about a {
     color: #444;
 }
 .skill {
