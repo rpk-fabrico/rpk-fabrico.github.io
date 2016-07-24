@@ -255,9 +255,9 @@ a {
         height: 0;
         margin: 0;
     }
-    #hellopreloader_preload {
-        opacity: 0;
-    }
+    .js #hellopreloader_preload {
+    opacity: 0;
+}
 }
 
 @media screen and (max-width: 375px) {
