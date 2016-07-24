@@ -20,8 +20,11 @@
 </head>
 
 <body>
+   
     <div id=hellopreloader>
-        <div id=hellopreloader_preload></div>
+        <div id=hellopreloader_preload>
+        </div>
+        
     </div>
     <div class=container>
         <nav class=navbar>
@@ -171,12 +174,12 @@
                     clearInterval(d);
                     hellopreloader.style.display = "none"
                 }
-            }, 15)
+            }, 1)
         }
         window.onload = function () {
             setTimeout(function () {
                 fadeOutnojquery(hellopreloader)
-            }, 200)
+            }, 500)
         };
     </script>
 </body>
