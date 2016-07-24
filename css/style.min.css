@@ -255,7 +255,7 @@ a {
         height: 0;
         margin: 0;
     }
-    .#hellopreloader_preload {
+    #hellopreloader_preload {
         opacity: 0;
     }
 }
