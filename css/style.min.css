@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(../img/linear-gradient-green-blue-1920x1080-c2-00ff7f-6495ed-a-315-f-14.png);
+    background-image: url(../img/OAICAF0.jpg);
     background-size: cover;
 }
 
@@ -54,7 +54,7 @@ ul li {
 }
 
 .header p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
@@ -77,11 +77,16 @@ ul li {
     text-align: center;
 }
 
+.box {
+    background-color: #fff;
+}
+
 .skill h5 {
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #444;
 }
 
 .skill li {
+    color: #444;
     list-style:square;
     list-style-position: inside;
 }
@@ -90,17 +95,16 @@ ul li {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     width: 100%;
-    background-color: #fff;
 }
 
 .footer h6,
 .footer a {
     font-weight: bolder;
-    color: #77f2b7;
+    color: #fff;
 }
 
 .footer a {
-    color: #444;
+    color: #fff;
 }
 
 @media screen and (max-width:980px) {
@@ -203,3 +207,44 @@ ul li {
     transform: translate3d(0, 0, 0)
 }
 
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: inline-block;
+        width: 100%;
+    }
+    .logo, .phone {
+        display: inline-block;
+    }
+    .phone {
+        float: right;
+    }
+    .footer .phone, .footer .logo {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .about {
+        padding: 3% 3% 3% 3%;
+    }
+    .about .contacts-2 h5 {
+        height: 0;
+        margin: 0;
+    }
+    
+    
+}
+
+@media screen and (max-width: 375px) {
+    .logo, .phone {
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .header p {
+        font-size: 1.1rem;
+    }
+}
