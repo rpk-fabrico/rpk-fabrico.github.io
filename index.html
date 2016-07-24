@@ -20,11 +20,11 @@
 </head>
 
 <body>
-   
+
     <div id=hellopreloader>
         <div id=hellopreloader_preload>
         </div>
-        
+
     </div>
     <div class=container>
         <nav class=navbar>
@@ -79,27 +79,27 @@
     <div class="overlay-map" onClick="style.pointerEvents='none'"></div>
     <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVdYBLpn" scroll="disable" width="100%" height="400" frameborder="0"></iframe>
     <div class="box">
-    <div class="container skill">
-        <div class=row>
-            <div class="six columns">
-                <h5>Почему &#171;Fabrico&#187;</h5>
-                <ul>
-                    <li>Широкий спектр выпускаемой продукции и оказываемых услуг</li>
-                    <li>Комплексный подход к решению задач клиента</li>
-                    <li>Отличное сочетание цена-качество</li>
-                </ul>
-            </div>
-            <div class="six columns">
-                <h5>Наши услуги</h5>
-                <ul>
-                    <li>Персонализация сувенирной и рекламной продукции</li>
-                    <li>Изготовление полиграфической продукции</li>
-                    <li>Трафаретная печать</li>
-                </ul>
+        <div class="container skill">
+            <div class=row>
+                <div class="six columns">
+                    <h5>Почему &#171;Fabrico&#187;</h5>
+                    <ul>
+                        <li>Широкий спектр выпускаемой продукции и оказываемых услуг</li>
+                        <li>Комплексный подход к решению задач клиента</li>
+                        <li>Отличное сочетание цена-качество</li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <h5>Наши услуги</h5>
+                    <ul>
+                        <li>Персонализация сувенирной и рекламной продукции</li>
+                        <li>Изготовление полиграфической продукции</li>
+                        <li>Трафаретная печать</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <section id=works class="works section no-padding">
         <div class=container-fluid>
             <div class="row no-gutter">
@@ -163,24 +163,24 @@
     </script>
     <script src=js/index.min.js></script>
     <script type=text/javascript>
-        console.log("info");
-        var hellopreloader = document.getElementById("hellopreloader_preload");
-
-        function fadeOutnojquery(c) {
-            c.style.opacity = 1;
-            var d = setInterval(function () {
-                c.style.opacity = c.style.opacity - 0.05;
-                if (c.style.opacity <= 0.05) {
-                    clearInterval(d);
-                    hellopreloader.style.display = "none"
-                }
-            }, 1)
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+            var hellopreloader = document.getElementById("hellopreloader_preload");
+            function fadeOutnojquery(c) {
+                c.style.opacity = 1;
+                var d = setInterval(function () {
+                    c.style.opacity = c.style.opacity - 0.05;
+                    if (c.style.opacity <= 0.05) {
+                        clearInterval(d);
+                        hellopreloader.style.display = "none"
+                    }
+                }, 1)
+            }
+            window.onload = function () {
+                setTimeout(function () {
+                    fadeOutnojquery(hellopreloader)
+                }, 500)
+            };
         }
-        window.onload = function () {
-            setTimeout(function () {
-                fadeOutnojquery(hellopreloader)
-            }, 500)
-        };
     </script>
 </body>
 

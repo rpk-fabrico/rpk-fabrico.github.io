@@ -1,9 +1,7 @@
-
 body {
     background-image: url(../img/OAICAF0.jpg);
     background-size: cover;
 }
-
 
 ul li {
     list-style: none;
@@ -38,7 +36,8 @@ a {
     text-align: left;
 }
 
-.phone, .phone a {
+.phone,
+.phone a {
     text-align: right;
     color: #fff;
 }
@@ -66,9 +65,13 @@ a {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.about p ,.about h5, .about a {
+
+.about p,
+.about h5,
+.about a {
     color: #444;
 }
+
 .skill {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -85,7 +88,7 @@ a {
 
 .skill li {
     color: #444;
-    list-style:square;
+    list-style: square;
     list-style-position: inside;
 }
 
@@ -122,7 +125,7 @@ a {
     font-weight: 200;
     letter-spacing: 0.05rem;
     font-size: 1.3rem;
-} 
+}
 
 .author {
     font-size: 10px;
@@ -205,9 +208,6 @@ a {
     transform: translate3d(0, 0, 0)
 }
 
-
-
-
 #hellopreloader>p {
     display: none
 }
@@ -230,23 +230,25 @@ a {
     opacity: 1;
 }
 
-
 @media screen and (max-width: 800px) {
     .navbar {
         display: inline-block;
         width: 100%;
     }
-    .logo, .phone {
+    .logo,
+    .phone {
         display: inline-block;
     }
     .phone {
         float: right;
     }
-    .footer .phone, .footer .logo {
+    .footer .phone,
+    .footer .logo {
         text-align: center;
         width: 100%;
     }
 }
+
 @media screen and (max-width: 425px) {
     .about {
         padding: 3% 3% 3% 3%;
@@ -256,12 +258,16 @@ a {
         margin: 0;
     }
     .js #hellopreloader_preload {
-    opacity: 0;
-}
+        opacity: 0;
+    }
+    #hellopreloader>p {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .logo, .phone {
+    .logo,
+    .phone {
         margin: 0;
         padding: 0;
     }
