@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang=ru class="no-js">
 
 <head>
     <meta charset=utf-8>
@@ -16,9 +16,13 @@
     <script src=js/modernizr.custom.js></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel=stylesheet href=css/style.min.css>
+    <script src=js/modernizr.custom.js></script>
 </head>
 
 <body>
+    <div id=hellopreloader>
+        <div id=hellopreloader_preload></div>
+    </div>
     <div class=container>
         <nav class=navbar>
             <div class="col-lg-6 col-md-6 col-sm-6 logo">
@@ -155,6 +159,26 @@
         });
     </script>
     <script src=js/index.min.js></script>
+    <script type=text/javascript>
+        console.log("info");
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(c) {
+            c.style.opacity = 1;
+            var d = setInterval(function () {
+                c.style.opacity = c.style.opacity - 0.05;
+                if (c.style.opacity <= 0.05) {
+                    clearInterval(d);
+                    hellopreloader.style.display = "none"
+                }
+            }, 15)
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader)
+            }, 200)
+        };
+    </script>
 </body>
 
 </html>
