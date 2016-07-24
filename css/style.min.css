@@ -40,7 +40,6 @@ a {
 
 .phone, .phone a {
     text-align: right;
-    color: #fff;
 }
 
 .header {
@@ -66,7 +65,7 @@ a {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.about p ,.about h5, .about a {
+.about p ,.about h5 {
     color: #444;
 }
 .skill {
