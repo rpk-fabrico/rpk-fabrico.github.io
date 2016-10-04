@@ -149,6 +149,7 @@
     </script>
     <script src=js/index.min.js></script>
     <script type=text/javascript>
+         if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))){
         $('.cssload-speeding-wheel').css({
             'margin-top': (document.documentElement.clientHeight) * 0.42
         });
@@ -171,7 +172,7 @@
             setTimeout(function () {
                 fadeOutnojquery(hellopreloader)
             }, 500)
-        };
+        };}
     </script>
 </body>
 
