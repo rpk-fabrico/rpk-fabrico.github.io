@@ -23,10 +23,15 @@
 
     <div id=hellopreloader>
         <div id=hellopreloader_preload>
-        <div class="cssload-speeding-wheel"></div>
+            <div class="cssload-speeding-wheel">
+                <div class="spinner">
+                    <div class="cube1"></div>
+                    <div class="cube2"></div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <div class=container>
         <nav class=navbar>
             <div class="col-lg-6 col-md-6 col-sm-6 logo">
@@ -76,7 +81,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id=works class="works section no-padding">
         <div class=container-fluid>
             <div class="row no-gutter">
@@ -119,10 +124,10 @@
             </div>
         </div>
     </div>
-    
-    <div class="overlay-map" onClick="style.pointerEvents='none'"></div>
+
+    <div class="overlay-map"></div>
     <iframe id="map" src="https://api-maps.yandex.ru/frame/v1/-/CVdYBLpn" width="100%" height="400" frameborder="0"></iframe>
-    
+
     <footer class=footer>
         <div class=container>
             <div class="col-lg-6 col-md-6 col-sm-6 logo">
@@ -144,25 +149,29 @@
     </script>
     <script src=js/index.min.js></script>
     <script type=text/javascript>
-        $('.cssload-speeding-wheel').css({ 'margin-top': (document.documentElement.clientHeight)*0.4 });
-$('.cssload-speeding-wheel').css({ 'opacity': '1'});
-            var hellopreloader = document.getElementById("hellopreloader_preload");
-            function fadeOutnojquery(c) {
-                c.style.opacity = 1;
-                var d = setInterval(function () {
-                    c.style.opacity = c.style.opacity - 0.05;
-                    if (c.style.opacity <= 0.05) {
-                        clearInterval(d);
-                        hellopreloader.style.display = "none"
-                    }
-                }, 1)
-            }
-            window.onload = function () {
-                setTimeout(function () {
-                    fadeOutnojquery(hellopreloader)
-                }, 500)
-            };
-        
+        $('.cssload-speeding-wheel').css({
+            'margin-top': (document.documentElement.clientHeight) * 0.42
+        });
+        $('.cssload-speeding-wheel').css({
+            'opacity': '1'
+        });
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(c) {
+            c.style.opacity = 1;
+            var d = setInterval(function () {
+                c.style.opacity = c.style.opacity - 0.05;
+                if (c.style.opacity <= 0.05) {
+                    clearInterval(d);
+                    hellopreloader.style.display = "none"
+                }
+            }, 1)
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader)
+            }, 500)
+        };
     </script>
 </body>
 
